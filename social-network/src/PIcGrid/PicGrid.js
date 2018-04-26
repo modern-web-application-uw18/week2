@@ -1,8 +1,11 @@
 import React from 'react';
+import './PicGrid.css';
 
 const topGrid = (props) => {
     return (
-        <img src={props.list}/>
+        <div className={props.grid}>
+          <img src={props.list}/>  
+        </div>
     );
 }
 

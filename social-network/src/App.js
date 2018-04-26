@@ -3,6 +3,7 @@ import './App.css';
 import Image from './ImageList/ImageList';
 import Header from './Header/Header';
 import Person from './Person/Person';
+import TopGrid from './PicGrid/PicGrid';
 
 class App extends Component {
     renderList() {
@@ -40,6 +41,7 @@ class App extends Component {
       <div className="App">
         <Header />
       {/* <button onClick={this.switchNameHandler}>Switch Name</button> */}
+    
       {this.renderList()}
       <div className="MidTitle">
             <h3>In case you missed it</h3>
