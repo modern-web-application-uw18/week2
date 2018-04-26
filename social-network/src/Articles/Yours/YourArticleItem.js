@@ -3,16 +3,25 @@ import PropTypes from 'prop-types';
 import './YourArticles.css';
 
 
+
+
 class YouArticleItem extends Component {
     render() {
+
         return (
-            <h4>{this.props.item.title}</h4>
+            [
+                <div className='col'>{this.props.item.title}</div>
+                // ,<div className="w-100">ok wt</div>
+            ]
         )
+
+
     }
 }
 
 YouArticleItem.propTypes = {
-    item: PropTypes.object.isRequired
+    item: PropTypes.object.isRequired,
+    lnBreak: PropTypes.number.isRequired
 }
 
 

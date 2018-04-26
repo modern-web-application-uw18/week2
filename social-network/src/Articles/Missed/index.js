@@ -5,8 +5,8 @@ import missedArticles from '../../json/missed-articles.json';
 class MissedArticles extends Component {
     render() {
   
-      const missedArticlesList = missedArticles.map(item => {
-        return <MissedArticleItem item={item} />
+      const missedArticlesList = missedArticles.map((item,idx) => {
+        return <MissedArticleItem item={item} key={idx} />
       });
  
   
