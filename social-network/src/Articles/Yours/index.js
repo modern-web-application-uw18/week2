@@ -18,7 +18,7 @@ class YourArticles extends Component {
 
     return (
       <div>
-        <h3>For You</h3>
+        <h5>For You</h5>
         <hr />
         <div className="row">
           {yourArticlesList}

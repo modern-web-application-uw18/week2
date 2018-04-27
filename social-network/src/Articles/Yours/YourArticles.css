@@ -1,7 +1,7 @@
-.yourArticleItem {
-    height: 100;
-    width: 100;
-    margin: 20;
-    textAlign: 'center';
+.cards {
+    height: 200px;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
     display: 'inline-block';
 }
