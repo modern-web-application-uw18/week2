@@ -13,7 +13,7 @@
     border: solid thin rgb(231, 231, 231);
     margin: 10px;
     height: 260px;
-    width: 450px;
+    width: 430px;
 }
 
 .nopadding {
@@ -55,4 +55,12 @@
     font-style: normal!important;
     letter-spacing: 0!important;
     color: rgb(22, 22, 22);
+}
+
+.bookmark-green {
+    color: green;
+}
+
+.bookmark-normal {
+    color: rgb(175, 175, 175);
 }

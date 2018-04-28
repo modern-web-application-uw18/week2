@@ -11,13 +11,17 @@ class YouArticleItem extends Component {
         this.cardMaker = this.cardMaker.bind(this);
         this.goToAddress = this.goToAddress.bind(this);
         this.changeColor = this.changeColor.bind(this);
+        this.card = this.card.bind(this);
+
+        this.state={
+            colorToChange : false
+        }
         
     }
 
     
     changeColor() {
-        alert(this);
-
+        this.state.colorToChange ? this.setState({colorToChange:false}): this.setState({colorToChange:true});
     }
    
 
@@ -27,9 +31,10 @@ class YouArticleItem extends Component {
 
    
 
-    card = (
+    card(){
+        return  (
         <div className='col-sm'>
-            <div className="container" onClick={this.changeColor}>
+            <div className="container">
                 <div className="row my-panel">
                     <div className="col-sm-6 nopadding"  onClick={this.goToAddress(this.props.item.link)}>
                         <div className="imageBox" style={{ backgroundImage: `url(${this.props.item.image})` }}>
@@ -54,7 +59,10 @@ class YouArticleItem extends Component {
                                      
                                     </div>
                                     <div className="col-sm-2 nopadding">
-                                       <MdBookmarkOutline size={22} id="bookmarkIcon" onClick={this.changeColor}/>
+                                       <MdBookmarkOutline 
+                                       size={22}    
+                                       className={this.state.colorToChange ? 'bookmark-green' : 'bookmark-normal'}
+                                       onClick={this.changeColor}/>
                                     </div>
                                 </div>
                             </div>
@@ -65,15 +73,16 @@ class YouArticleItem extends Component {
         </div>
     );
 
-
+    }
 
     cardMaker() {
  
         if (this.props.lnBreak % 2) {
-            return [this.card, <div className="w-100" />]
+            return [this.card(), <div className="w-100" />]
         } else {
-            return this.card
+             return this.card();
         }
+       
     }
 
     render() {
