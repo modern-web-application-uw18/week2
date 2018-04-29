@@ -1,0 +1,17 @@
+body {
+  margin: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.articleimage {
+	width: 200px;	
+}
+
+ul {
+  list-style-type: none;
+}
+
+.articlediv {
+	float: left;
+}
