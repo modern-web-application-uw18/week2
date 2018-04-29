@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './YourArticles.css';
-import UserBadge from '../UserBadge';
+import UserBadge from '../Common/UserBadge';
+import Title from '../Common/Title';
+import BodyText from '../Common/BodyText';
+import ImageBox from '../Common/ImageBox';
 
 class YouArticleItem extends Component {
     constructor(props) {
@@ -20,15 +23,15 @@ class YouArticleItem extends Component {
             <div className='col-sm'>
                 <div className="container">
                     <div className="row my-panel">
-                        <div className="col-sm-6 nopadding"  onClick={this.goToAddress(this.props.item.link)}>
-                            <div className="imageBox" style={{ backgroundImage: `url(${this.props.item.image})` }}>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 nopadding">
-                            <h6 className="title" onClick={this.goToAddress(this.props.item.link)}>{this.props.item.title}</h6>
-                            <span className="body-text"  onClick={this.goToAddress(this.props.item.link)}>{this.props.item.description}</span>
+                        
+                        <ImageBox item={this.props.item} colClass="col-sm-6 nopadding"/>
+
+                        <div className="col-sm-6">
+                            <Title item={this.props.item}/>
+                            <BodyText item={this.props.item}/>
                             <UserBadge item={this.props.item}/>                     
                         </div>
+                        
                     </div>
                 </div>
             </div>

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './MissedArticles.css';
-import UserBadge from '../UserBadge';
+import UserBadge from '../Common/UserBadge';
+import Title from '../Common/Title';
+import BodyText from '../Common/BodyText';
+import ImageBox from '../Common/ImageBox';
 
 class MissedArticleItem extends Component {
     constructor(props) {
@@ -20,15 +23,12 @@ class MissedArticleItem extends Component {
             <div className='col-sm'>
                 <div className="container my-panel-missed-width">
                     <div className="row my-panel-missed">
-                        <div className="col-sm-12 nopadding" onClick={this.goToAddress(this.props.item.link)}>
-                            <div className="image-box-missed" style={{ backgroundImage: `url(${this.props.item.image})` }}>
-                            </div>
-                        </div>
+                            <ImageBox item={this.props.item} colClass="col-sm-12 nopadding"/>
                     </div>
                     <div className="row my-panel-missed-text" >
                         <div className="col-sm-12">
-                            <h6 className="title" onClick={this.goToAddress(this.props.item.link)}>{this.props.item.title}</h6>
-                            <span className="body-text-missed"onClick={this.goToAddress(this.props.item.link)}>{this.props.item.description}</span>            
+                            <Title item={this.props.item}/>
+                            <BodyText item={this.props.item}/>
                             <UserBadge item={this.props.item}/>                     
                         </div>
                     </div>
@@ -46,7 +46,7 @@ class MissedArticleItem extends Component {
 
     render() {    
         if (this.props.lnBreak % 3 === 2) {
-            return this.renderCard(1); //render card and break on odd nr
+            return this.renderCard(1); //render card and break on every third item
         } else {
             return this.renderCard();//render card only otherwise
         }
