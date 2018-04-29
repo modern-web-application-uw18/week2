@@ -6,9 +6,6 @@ const missedArticlesList = missedArticles.map((item, idx) => {
   return <MissedArticleItem item={item} key={idx} lnBreak={idx}  />
 });
 
-function keyMaker(){
-
-}
 
 class MissedArticles extends Component {
 

@@ -1,0 +1,35 @@
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .name-badge-name {
+    font-size: 14px!important;
+    line-height: 10px!important;
+    font-style: normal!important;
+    letter-spacing: 0!important;
+    color: rgb(22, 22, 22);
+}
+
+.bookmark-green {
+    color: green;
+}
+
+.bookmark-normal {
+    color: rgb(175, 175, 175);
+}
+
+.user-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    font-size: 14px!important;
+    line-height: 10px!important;
+    font-style: normal!important;
+    letter-spacing: 0!important;
+    color: rgb(175, 175, 175);
+    padding: 0 !important;
+
+    
+}

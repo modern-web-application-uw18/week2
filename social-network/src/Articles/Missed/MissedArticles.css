@@ -12,6 +12,11 @@
     margin: 0px;
 }
 
+.my-panel-missed-width {
+    width: 300px;
+    margin: 5px;
+}
+
 .my-panel-missed {
     border-left: solid thin rgb(231, 231, 231);
     border-right: solid thin rgb(231, 231, 231);
@@ -32,9 +37,4 @@
     font-style: normal!important;
     letter-spacing: 0!important;
     color: rgb(175, 175, 175);
- }
-
-
- .user-badge {
-     
  }
