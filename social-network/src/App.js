@@ -18,7 +18,7 @@ class App extends Component {
             <span className="heading-title heading-title--lineHeightTight u-flex0 u-block u-paddingBottom20 u-borderBottomNormal u-marginBottomNegative1 u-uiDisplayBold u-fontSize20 u-textColorDarker u-xs-fontSize18">For you</span>
           </header>
           {articles.map((article, index) => 
-            <Story key={index} title={article.title} description={article.description} image={article.image} authorImageUrl={article.author.image} authorName={article.author.name} postedDate={new Date(article.postedDate)} minutesToRead={article.minutesToRead} memberPreview={article.memberPreview} />
+            <Story key={index} title={article.title} description={article.description} image={article.image} authorImageUrl={article.author.image} authorName={article.author.name} postedDate={new Date(article.postedDate)} minutesToRead={article.minutesToRead} memberPreview={article.memberPreview} link={article.link} />
           )}          
       </section>
 
@@ -27,7 +27,7 @@ class App extends Component {
           <span className="heading-title heading-title--lineHeightTight u-flex0 u-block u-paddingBottom20 u-borderBottomNormal u-marginBottomNegative1 u-uiDisplayBold u-fontSize20 u-textColorDarker u-xs-fontSize18">In case you missed it</span>
         </header>
         {missedArticles.map((missedArticle, index) => 
-          <StoryImageTop key={index} memberPreview={missedArticle.memberPreview} title={missedArticle.title} description={missedArticle.description} image={missedArticle.image} authorImageUrl={missedArticle.author.image} authorName={missedArticle.author.name} postedDate={new Date(missedArticle.postedDate)} minutesToRead={missedArticle.minutesToRead} />
+          <StoryImageTop key={index} memberPreview={missedArticle.memberPreview} title={missedArticle.title} description={missedArticle.description} image={missedArticle.image} authorImageUrl={missedArticle.author.image} authorName={missedArticle.author.name} postedDate={new Date(missedArticle.postedDate)} minutesToRead={missedArticle.minutesToRead} link={missedArticle.link} />
         )} 
       </section>
     </div>
