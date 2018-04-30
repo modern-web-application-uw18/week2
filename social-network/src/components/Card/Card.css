@@ -1,0 +1,8 @@
+.card__wrapper {
+  margin-bottom: 40px;
+  border: 1px solid lightgray;
+}
+
+.card__content {
+  margin: 20px;
+}

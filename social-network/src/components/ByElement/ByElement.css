@@ -1,0 +1,16 @@
+.by-element {
+  display: flex;
+}
+
+.by-element__author-avatar--container {
+  margin-right: 10px;
+}
+
+.by-element__author-avatar {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.by-element__author-data {
+  font-size: 12px;
+}
