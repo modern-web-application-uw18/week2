@@ -6,7 +6,7 @@ import ImageList from '../ImageList/ImageList';
 class Card extends Component {
     render () {        
         return (
-            <div className={this.props.cardStyle}>
+            <div>
                 <ImageList/>
             </div>
         )

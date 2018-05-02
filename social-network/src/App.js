@@ -10,14 +10,12 @@ import Footer from './Footer/Footer';
 
 class App extends Component {
 
-
   render() {
    
     return (
       <div className="App">
         <Header />
         <Card/>
-
         <Footer/>
         <Card/>
       </div>
