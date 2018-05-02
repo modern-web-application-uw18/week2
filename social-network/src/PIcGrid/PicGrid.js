@@ -1,7 +1,7 @@
 import React from 'react';
 import './PicGrid.css';
 
-const topGrid = (props) => {
+const grid = (props) => {
     return (
         <div className={props.grid}>
           <img src={props.list}/>  
@@ -9,4 +9,4 @@ const topGrid = (props) => {
     );
 }
 
-export default topGrid;
+export default grid;

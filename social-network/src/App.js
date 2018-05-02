@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Image from './ImageList/ImageList';
 import Header from './Header/Header';
-import Person from './Person/Person';
-import TopGrid from './PicGrid/PicGrid';
+import articles from './Articles/your-articles';
+import missedArticles from './Articles/missed-articles';
+
+console.log(articles, missedArticles)
 
 class App extends Component {
     renderList() {
@@ -19,28 +20,10 @@ class App extends Component {
       );
   }
 
-  state = {
-    persons: [
-      {name: 'Billy', age:39},
-      {name: 'Gina', age: 37},
-      {name: 'Grace', age: "6m"}
-    ]
-  }
-
-  switchNameHandler = () => {
-    this.setState({persons: [
-      {name: "william", age: 29},
-      {name: "gina", age: 19},
-      {name: "grace", age: 20}
-    ]})
-
-  }
-
   render() {
     return (
       <div className="App">
         <Header />
-      {/* <button onClick={this.switchNameHandler}>Switch Name</button> */}
     
       {this.renderList()}
       <div className="MidTitle">
@@ -49,21 +32,7 @@ class App extends Component {
             <br />
         </div>
         {this.renderList()}
-      <Person 
-      name={this.state.persons[0].name} 
-      age={this.state.persons[0].age}
-      click={this.switchNameHandler}/>
-      <Person 
-      name={this.state.persons[1].name} 
-      age={this.state.persons[1].age}/>
-      <Person 
-      name={this.state.persons[2].name} 
-      age={this.state.persons[2].age}/>
-      {/* <Header src={props.name}/>
-      <h1> react app </h1>
-      <Image src={list[0]} /> */}
-      
-      <Person name="Billy" age="39"/>
+     
       </div>
     );
   }
