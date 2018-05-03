@@ -1,4 +1,4 @@
-const missedArticles = [
+[
     {
         "title": "What Would Happen If You Did These Things Every Day...",
         "description": "For thirty days...",
@@ -45,5 +45,3 @@ const missedArticles = [
         "memberPreview": true
     }
 ]
-
-export default missedArticles;

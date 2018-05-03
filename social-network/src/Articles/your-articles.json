@@ -1,4 +1,4 @@
-const articles = [
+[
     {
         "title": "The 7 Habits of Highly Creative People",
         "description": "\"What a good artist understands is that nothing comes from nowhere. Nothing is completely original.\"",
@@ -60,5 +60,3 @@ const articles = [
         "memberPreview": true
     }
 ]
-
-export default articles;

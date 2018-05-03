@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Header/Header';
-import Card from './Card/Card';
-import ImageList from './ImageList/ImageList';
-import articles from './Articles/your-articles';
-import missedArticles from './Articles/missed-articles';
+import TopCard from './Card/TopCard';
+import BottomCard from './Card/BottomCard';
+import yourArticles from './Articles/your-articles.json';
+import missedArticles from './Articles/missed-articles.json';
 import PropTypes from 'prop-types';
 import Footer from './Footer/Footer';
 
 class App extends Component {
-
+  
   render() {
-   
     return (
       <div className="App">
         <Header />
-        <Card/>
+        <TopCard/>
         <Footer/>
-        <Card/>
+        <BottomCard/>
       </div>
     );
   }
