@@ -1,0 +1,91 @@
+
+.ForYouSection {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid lightgrey;
+}
+.MissedSection {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid lightgrey;
+}
+
+.flex-container-box-two-per-row {
+    display: flex;
+    /*flex-wrap: nowrap;*/
+    flex-direction: row;
+    border: 1px solid lightgrey;
+    margin: 10px;
+    width: 45%;
+}
+.flex-container-box-three-per-row {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-wrap: nowrap;*/
+    flex-direction: row;
+    border: 1px solid lightgrey;
+    margin: 10px;
+    width: 30%;
+}
+
+.flex-container-box-generic {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+}
+
+/*  Within a box, this is all the stuff right of the image*/
+.flex-container-contents {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    padding-left: 10px;
+    max-width: 300px;
+}
+
+/*  Within a container-contents, this is author image, name, date and readtime data*/
+.flex-container-metadata {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: row;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+/*  Within flex-container-metadata, this is everything to the right of author pic*/
+.flex-container-md-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    color: rgba(0,0,0,.54);
+}
+
+.flex-container-md-row {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* Within container-metadata, this is the name, date, readtime */
+.flex-container-meta-text {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+}
+
+.flex-container-space-filler {
+    flex-grow: 1; /*grow to fill space to push what comes after to bottom of box*/
+}
+.ArticleMinutesToRead {
+    position: relative;
+}
+.Circle {
+	border-radius: 50%;
+	width: 3px;
+    height: 3px;
+    background-color: lightgrey;
+    margin: 5px;
+}
