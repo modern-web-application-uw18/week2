@@ -1,0 +1,9 @@
+.cardContainer {
+  display: inline-block;
+  width: 25%;
+  margin: 0 25px;
+}
+
+.cardContainer>div:first-child {
+  height: 300px;
+}
