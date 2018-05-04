@@ -9,15 +9,21 @@ const TopCard = (props) => {
     const imagesList = yourArticles.map((f,idx) => {
         return (
             <div className="cardStyle">
-                <img key={idx} alt={`Image`} src={yourArticles[idx].image}/>
-                <h3>{yourArticles[idx].title}</h3>
-                <h5>{yourArticles[idx].description}</h5>
-                <p></p>
+                <div>
+                    <img key={idx} alt={`Image`} src={yourArticles[idx].image}/>
+                </div>
+                <div className="cardStyle">
+                    <h3>{yourArticles[idx].title}</h3>
+                    <h5>{yourArticles[idx].description}</h5>
+                    <img  key={idx} alt={`Image`} src={yourArticles[idx].author.image}/>
+                    <h5>{yourArticles[idx].author.name}</h5>
+                    <p>{yourArticles[idx].postedDate}</p>
+                </div>
             </div>
         )
     })
     return (
-        <div >{imagesList}</div>
+        <div>{imagesList}</div>
     )
 }
         
