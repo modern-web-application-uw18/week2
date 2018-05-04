@@ -1,0 +1,24 @@
+body {
+  font-family: "Open Sans","Helvetica Neue",sans-serif;
+  box-sizing: border-box;
+  font-size: 22px;
+  line-height: 1.9;
+}
+
+.section group {
+  width: 50%;
+  padding: 0 20px;
+  margin: 30px auto;
+}
+
+.your {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  
+}
+.missed {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
