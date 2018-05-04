@@ -3,8 +3,6 @@ import './Card.css';
 import TitleMod from '../TitleMod';
 import ElementMod from '../ElementMod';
 import CopyMod from '../CopyMod';
-import ElementMod from '../ElementMod';
-
 
 class Card extends Component {
   render() {
