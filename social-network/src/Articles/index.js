@@ -5,12 +5,6 @@ import ArticleItem from './ArticleItem.js';
 
 class Authorbio extends Component {
   render() {
-    // const authors = [
-    //   'James Miller',
-    //   'Doug Williams',
-    //   'Kirk Johnson',
-    //   'Sara Roberts'
-    // ];
     // const authors = JSON.parse(missedArticles);
     // const authors = missedArticles;
     const authorList = missedArticles.map((a, indx) => {
@@ -28,8 +22,6 @@ class Authorbio extends Component {
     const forYou = recommendedArticles.map((a, indx) => {
       return <ArticleItem key={indx} author={a}  missedIt={true} />;
     });
-
-    // const authorList = authors.map((a) =>  <li>{a}</li>);
 
     return (
       <div>
