@@ -17,20 +17,18 @@ class ArticleItem extends Component {
     return (
       <div className={this.props.missedIt ? 'recommend-article' : 'creativity-article'} >
         <div className={this.props.missedIt ? 'recomm-image-position' : 'image-position'}>
-          <img src={au.image} className ={this.props.missedIt ? 'recomm-image-box' : 'image-box'} />
+          <img src={au.image}
+          className ={this.props.missedIt ? 'recomm-image-box' : 'image-box'}
+          alt={au.image} />
         </div>
 
-        <div className='rest-article'>
-          <div className=''>
+        <div className={this.props.missedIt ? 'recommend-rest-article' : 'rest-article'}>
             <p className='article-title'>{au.title}</p>
-          </div>
-          <div className=''>
             <p className='author-description'>{au.description}</p>
-          </div>
 
           <div className={ this.props.missedIt ? 'recomm-author-indent' : 'author-ident'}>
             <div className='author-image-position'>
-              <img src={au.author.image} className='author-image'/>
+              <img src={au.author.image} className='author-image' alt={au.author}/>
             </div>
 
             <div className='author-name'>
@@ -46,7 +44,7 @@ class ArticleItem extends Component {
 
 ArticleItem.propTypes = {
   // authorBio: PropTypes.string.isRequired
-  author: PropTypes.class
+  au: PropTypes.class
 };
 
 ArticleItem.defaultProps = {
