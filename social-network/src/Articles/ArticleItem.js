@@ -11,8 +11,10 @@ class ArticleItem extends Component {
     const au = this.props.author;
     const date = new Date(au.postedDate);
     const day = date.getDate();
-    const month = date.getMonth() + 1
-    const mon = Dateformat(month, "mmm");
+    const mon = date.getMonth();
+    // const mon = Dateformat(month, "mmm");
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
     return (
       <div className={this.props.missedIt ? 'recommend-article' : 'creativity-article'} >
@@ -23,8 +25,8 @@ class ArticleItem extends Component {
         </div>
 
         <div className={this.props.missedIt ? 'recommend-rest-article' : 'rest-article'}>
-            <p className='article-title'>{au.title}</p>
-            <p className='author-description'>{au.description}</p>
+          <p className='article-title'>{au.title}</p>
+          <p className='author-description'>{au.description}</p>
 
           <div className={ this.props.missedIt ? 'recomm-author-indent' : 'author-ident'}>
             <div className='author-image-position'>
@@ -33,7 +35,7 @@ class ArticleItem extends Component {
 
             <div className='author-name'>
               <p>{au.author.name}</p>
-              <p>{mon} {day}</p>
+              <p>{months[mon]} {day}</p>
             </div>
           </div>
         </div>
@@ -44,7 +46,7 @@ class ArticleItem extends Component {
 
 ArticleItem.propTypes = {
   // authorBio: PropTypes.string.isRequired
-  au: PropTypes.class
+  // au: PropTypes.class
 };
 
 ArticleItem.defaultProps = {
