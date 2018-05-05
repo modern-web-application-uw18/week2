@@ -5,18 +5,8 @@ import ArticleItem from './ArticleItem.js';
 
 class Authorbio extends Component {
   render() {
-    // const authors = JSON.parse(missedArticles);
-    // const authors = missedArticles;
     const authorList = missedArticles.map((a, indx) => {
-      // return <li>{a}</li>
-      // return <ArticleItem text={a} />
-      // return <ArticleItem key={a.toString()} authorBio={a} complete={true}/>
-      // return <ArticleItem key={indx} authorBio={a.title} complete={true}/>;
-      // return (
-        // <div className='critivity-body'>
       return <ArticleItem key={indx} author={a} missedIt={false} />;
-        // </div>
-      // );
     });
 
     const forYou = recommendedArticles.map((a, indx) => {
@@ -43,9 +33,6 @@ class Authorbio extends Component {
           {authorList}
         </div>
       </div>
-      // foreach(let a in authors) {
-      //   return <h1>a.name</h1>;
-      // }
     );
   }
 }
