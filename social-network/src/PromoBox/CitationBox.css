@@ -1,0 +1,54 @@
+
+.citation-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.citation-box .author-info,
+.citation-box .author-info p {;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: .8rem;
+  -webkit-transform: translateY(1.52px);
+  transform: translateY(1.52px);
+  margin: .2rem 0;
+}
+
+.citation-box .author-info {
+  flex-grow: 5;
+  flex-shrink: 0;
+  flex-basis: 60%;
+}
+
+
+.citation-box .author-info a {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  text-decoration: none;
+}
+
+.citation-box .author-info a:hover {
+  text-decoration: underline;
+}
+
+.citation-box .author-photo img {
+  border-radius: 100%;
+  width: 2.5rem;
+  margin-right: .8rem;
+}
+
+.citation-box .bookmark-icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
