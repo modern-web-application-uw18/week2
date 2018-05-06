@@ -17,14 +17,22 @@ class Card extends Component {
       memberPreview
     } = this.props.article;
     return (
-      <div>
-        <img className="Card-img" src={image} />
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <div>
-          <img className="Card-author-img" src={author.image} />
-          <p>{author.name}</p>
-          <span>{Moment(postedDate).format('MMM D')} · {minutesToRead} min read</span>
+      <div className="cardWrapper">
+        <div className="cardImgWrapper">
+          <img className="cardImg" src={image} />
+        </div>
+        <div className="cardInfoWrapper">
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <div className="cardAuthorWrapper">
+            <div className="cardAuthorImgWrapper">
+              <img className="cardAuthorImg" src={author.image} />
+            </div>
+            <div className="cardAuthorNameWrapper">
+              <p className="cardAuthorName">{author.name}</p>
+              <span className="cardAuthorDate">{Moment(postedDate).format('MMM D')} · {minutesToRead} min read</span>
+            </div>
+          </div>
         </div>
       </div>
     );

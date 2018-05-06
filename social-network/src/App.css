@@ -1,5 +1,26 @@
 .App {
-  text-align: center;
+  background: #ffffff;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+.header {
+  border-bottom: 1px solid #eeeeee;
+  line-height: 2.3;
+  margin: 0 20px 30px 20px;
+}
+
+.header > h1 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  border-bottom: 1px solid #333333;
+}
+
+.header2 > h1 {
+  width: 325px;
 }
 
 .App-logo {
