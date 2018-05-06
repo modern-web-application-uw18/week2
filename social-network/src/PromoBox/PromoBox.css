@@ -63,6 +63,8 @@
   text-decoration: none;
 }
 
+.promo-box .member-preview,
+.promo-box .audio,
 .promo-box .articleInfo p {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   color: rgba(0,0,0,.54);
@@ -73,10 +75,38 @@
   line-height: 20px;
   -webkit-transform: translateY(1.52px);
   transform: translateY(1.52px);
+}
+
+.promo-box .articleInfo p {
   margin-top: .1rem;
   overflow: hidden;
   max-height: 60px;
   text-overflow: ellipsis;
+}
+
+.promo-box .audio-and-member .member-preview-icon {
+  float: right;
+}
+
+.promo-box .member-preview .member-preview-icon {
+  margin-right: .2rem;
+}
+
+.promo-box .member-preview-icon {
+  height: 15px;
+}
+
+.promo-box .audio, .member-preview {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.promo-box .audio .audio-icon {
+  height: 21px;
+  margin-right: .3rem;
 }
 
 @media screen and (max-width: 767px) {

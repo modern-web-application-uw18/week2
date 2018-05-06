@@ -2,29 +2,42 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './PromoBox.css';
 import CitationBox from './CitationBox';
-
+import MemberPreviewIcon from './MemberPreviewIcon';
+import AudioElement from './AudioElement';
 
 class PromoBox extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     items: []
-  //   };
-  // }
 
-  // addItem(item) {
-  //   this.setState((prevState, props) => {
-  //     return {
+  getMemberPreview() {
+    return (
+      <div className="member-preview">
+        <MemberPreviewIcon />
+        <span>Member preview</span>
+      </div>
+    );
+  }
 
-  //     };
-  //   });
-  // }
+  getAudioElement() {
+    return (
+      <AudioElement />
+    );
+  }
+
+  getAudioMemberElement() {
+    return (
+      <div className="audio-and-member">
+        <MemberPreviewIcon />
+        <AudioElement />
+      </div>
+    );
+  }
+
 
   render() {
     const {
       title, summary, url, featureImage, audioAvailable, authorName, authorAvatar, authorUrl, avatarHalo, datePosted, timeToRead, memberPreview
     } = this.props.promoInfo;
-
+    const audioIcon = this.props.promoInfo.audioAvailable;
+    const memberPreviewElem = this.props.promoInfo.memberPreview;
     const backgroundMediaStyles = {
         backgroundImage: 'url(' + featureImage + ')',
         position: "relative",
@@ -33,6 +46,7 @@ class PromoBox extends Component {
         alignItems: "stretch",
         flexGrow: 1
     };
+
     return (
       <section className="promo-box">
         <div className="media">
@@ -44,6 +58,9 @@ class PromoBox extends Component {
           <div className="content-container">
             <a href={this.props.promoInfo.url}>
               <div className="articleInfo">
+                {audioIcon && !memberPreviewElem ? this.getAudioElement() : null}
+                {memberPreviewElem && !audioIcon ? this.getMemberPreview() : null}
+                {memberPreviewElem && audioIcon ? this.getAudioMemberElement() : null}
                 <h1>{this.props.promoInfo.title}</h1>
                 <p>{this.props.promoInfo.summary}</p>
               </div>
