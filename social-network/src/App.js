@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import PromoBox from './PromoBox/PromoBox';
-import forYou from './forYou.json';
-import inCase from './inCaseYouMissedIt.json';
+import yourArticles from './your-articles.json';
+import missedArticles from './missed-articles.json';
 
 class App extends Component {
   render() {
@@ -12,14 +12,14 @@ class App extends Component {
         <main>
           <h1>For you</h1>
           <section className="promos promos-top">
-           {forYou.map((forYou, idx) => {
-              return <PromoBox key={idx} promoInfo={forYou} />;
+           {yourArticles.map((yourArticles, idx) => {
+              return <PromoBox key={idx} promoInfo={yourArticles} />;
            })}
           </section>
           <h1>In case you missed it</h1>
           <section className="promos">
-            {inCase.map((inCase, dex) => {
-              return <PromoBox key={dex} promoInfo={inCase} />;
+            {missedArticles.map((missedArticles, dex) => {
+              return <PromoBox key={dex} promoInfo={missedArticles} />;
             })}
           </section>
         </main>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BookmarkIcon from './BookmarkIcon';
 import './CitationBox.css';
 
 class CitationBox extends Component {
@@ -15,23 +16,23 @@ class CitationBox extends Component {
   }
 
   render() {
-    const setAuthorPhotoHalo = this.props.citation.avatarHalo;
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const setAuthorPhotoHalo = this.props.citation.author.isMediumMember;
+    const datePosted = new Date(this.props.citation.postedDate);
+
     return (
       <div className="citation-box">
-        <div className="author-photo">
-          {setAuthorPhotoHalo ? this.authorPhotoHalo() : null}
-          <img src={this.props.citation.authorAvatar} className="author-photo" alt={this.props.citation.authorName} title={this.props.citation.authorName}/>
-        </div>
+        <a href={this.props.citation.author.link} rel="author">
+          <div className="author-photo">
+            {setAuthorPhotoHalo ? this.authorPhotoHalo() : null}
+            <img src={this.props.citation.author.image} className="author-photo" alt={this.props.citation.author.name} title={this.props.citation.author.name}/>
+          </div>
+        </a>
         <div className="author-info">
-          <a href={this.props.citation.authorUrl} rel="author">{this.props.citation.authorName}</a>
-          <p>{this.props.citation.datePosted} · {this.props.citation.timeToRead} read</p>
+          <a href={this.props.citation.author.link} rel="author">{this.props.citation.author.name}</a>
+          <p>{monthNames[datePosted.getMonth()]} {datePosted.getDay()} · {this.props.citation.minutesToRead} min read</p>
         </div>
-        <div className="bookmark-icon">
-          <svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">
-            <path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd">
-            </path>
-          </svg>
-        </div>
+        <BookmarkIcon />
       </div>
     );
   }

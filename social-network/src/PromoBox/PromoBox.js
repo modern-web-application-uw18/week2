@@ -34,12 +34,12 @@ class PromoBox extends Component {
 
   render() {
     const {
-      title, summary, url, featureImage, audioAvailable, authorName, authorAvatar, authorUrl, avatarHalo, datePosted, timeToRead, memberPreview
+      title, description, image, link, author, postedDate, minutesToRead, hasAudioAvailable, memberPreview
     } = this.props.promoInfo;
     const audioIcon = this.props.promoInfo.audioAvailable;
     const memberPreviewElem = this.props.promoInfo.memberPreview;
     const backgroundMediaStyles = {
-        backgroundImage: 'url(' + featureImage + ')',
+        backgroundImage: 'url(' + image + ')',
         position: "relative",
         backgroundPosition: "center center",
         backgroundSize: "cover",
@@ -50,19 +50,19 @@ class PromoBox extends Component {
     return (
       <section className="promo-box">
         <div className="media">
-          <a href={this.props.promoInfo.url}>
+          <a href={this.props.promoInfo.link}>
             <div className="background-media" style={backgroundMediaStyles}></div>
           </a>
         </div>
         <div className="content">
           <div className="content-container">
-            <a href={this.props.promoInfo.url}>
+            <a href={this.props.promoInfo.link}>
               <div className="articleInfo">
                 {audioIcon && !memberPreviewElem ? this.getAudioElement() : null}
                 {memberPreviewElem && !audioIcon ? this.getMemberPreview() : null}
                 {memberPreviewElem && audioIcon ? this.getAudioMemberElement() : null}
                 <h1>{this.props.promoInfo.title}</h1>
-                <p>{this.props.promoInfo.summary}</p>
+                <p>{this.props.promoInfo.description}</p>
               </div>
             </a>
           </div>
@@ -72,6 +72,18 @@ class PromoBox extends Component {
     );
   }
 }
+
+PromoBox.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  minutesToRead: PropTypes.number.isRequired,
+  link: PropTypes.string.isRequired,
+  hasAudioAvailable: PropTypes.bool.isRequired,
+  memberPreview: PropTypes.bool.isRequired,
+  image: PropTypes.string.isRequired,
+  postedDate: PropTypes.string.isRequired,
+  author: PropTypes.object.isRequired
+};
 
 export default PromoBox;
 
