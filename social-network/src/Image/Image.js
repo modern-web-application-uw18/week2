@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Image.css';
 
 export default class ArticleImage extends Component {
   constructor(props){
@@ -9,7 +10,7 @@ export default class ArticleImage extends Component {
 
     render() {
         return (
-            <img src={this.props.src} alt={this.props.alt} />
+            <div className="imageContainer"><img src={this.props.src} alt={this.props.alt} /></div>
         );
     }
 }

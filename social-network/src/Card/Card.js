@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
-import Image from './Image';
-import AuthorInfo from './AuthorInfo';
-import Summary from './Summary';
+import AuthorInfo from '../AuthorInfo/AuthorInfo';
+import Summary from '../Summary/Summary';
 import PropTypes from 'prop-types';
-import CardHeader from './CardHeader';
 import './Card.css';
 
 export default class Card extends Component {
-  constructor(props){
-  	super(props);
-  	this.state = {};
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
   render() {
     return (
-      <div className="cardContainer" onClick={() => window.location = this.props.link}>
-        <div className="imageHeader" style={{background: `url('${this.props.image}') center / cover no-repeat `}}>
+      <div className="cardContainer">
+        <div className="imageHeader" title={this.props.title} style={{ background: `url('${this.props.image}') center / cover no-repeat ` }} onClick={() => window.location = this.props.link}>
         </div>
-        <Summary title={this.props.title} summary={this.props.description}/>
-        <footer>
+        <div className="articleSummary">
+          <Summary title={this.props.title} summary={this.props.description}/>
           <AuthorInfo user={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
-        </footer>
+        </div>
       </div>
     );
   }

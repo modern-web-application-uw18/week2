@@ -5,26 +5,135 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  width: 80%;
+  margin: 50px auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h2 {
+  text-align: left;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  padding: 0 0 10px 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+section.forYou {
+  width: 100%;
 }
 
-.App-title {
-  font-size: 1.5em;
+.content {
+  /* .forYou .content { */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
 }
 
-.App-intro {
-  font-size: large;
+/* .forYou .content .cardContainer { */
+
+.content .cardContainer {
+  width: 32.5%;
+  border: 2px solid #f4f4f4;
+  padding: 10px;
+  margin: 7px 5px;
+  flex-grow: 1;
+}
+
+.forYou .content .cardContainer {
+  width: 49%;
+}
+
+.forYou .content .imageHeader {
+  height: 300px;
+  width: 30%;
+  display: inline-block;
+}
+
+.forYou .content .articleSummary {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  position: relative;
+}
+
+.forYou .content .articleSummary .footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.forYou .content .articleSummary .summary,
+.forYou .content .articleSummary .footer {
+  width: 100%;
+  padding: 0 10px 0 0;
+}
+
+.forYou .content .articleSummary .summary {
+  height: 50%;
+}
+
+.forYou .content .articleSummary .footer .imageContainer {
+  width: 20%;
+}
+
+.forYou .content .articleSummary .footer .articleInfo {
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+section.youMissedIt {
+  width: 100%;
+}
+
+/* .youMissedIt .cardContainer {
+  height: 300px;
+} */
+
+.youMissedIt .cardContainer {
+  height: 300px;
+  /* height: 40%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.youMissedIt .content .cardContainer .articleSummary {
+  height: 60%;
+}
+
+.youMissedIt .content .imageHeader {
+  /* height: 100px;*/
+  height: 40%;
+}
+
+.youMissedIt .content .articleSummary .summary,
+.youMissedIt .content .articleSummary .footer {
+  width: 100%;
+  padding: 0 10px 0 0;
+  font-size: .80rem;
+}
+
+.youMissedIt .content .articleSummary .summary {
+  height: 60%
+}
+
+.youMissedIt .content .articleSummary .footer {
+  height: 40%;
+}
+
+.youMissedIt .content .articleSummary .footer .imageContainer {
+  width: 15%;
+}
+
+.youMissedIt .content .articleSummary .footer .articleInfo {
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

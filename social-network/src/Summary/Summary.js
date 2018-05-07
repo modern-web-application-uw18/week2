@@ -6,10 +6,10 @@ export default class Summary extends Component {
     super(props);
     this.state = {};
   }
-  
+
     render() {
         return (
-          <div className="articleSummary">
+          <div className="summary">
             <h3>{this.props.title}</h3>
             <p>{this.props.summary}</p>
           </div>

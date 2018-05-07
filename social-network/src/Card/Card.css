@@ -1,9 +1,21 @@
 .cardContainer {
   display: inline-block;
-  width: 25%;
-  margin: 0 25px;
+  text-align: left;
 }
 
-.cardContainer>div:first-child {
-  height: 300px;
+.imageHeader {
+  cursor: pointer;
+}
+
+.footer {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.articleSummary {
+  position: relative;
+  height: 155px;
 }
