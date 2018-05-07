@@ -7,7 +7,6 @@
   border: .5pt solid rgba(0,0,0,.1);
   margin: .6rem;
   border-radius: 2px;
-  height: 260px;
 }
 
 .promo-box .media {
@@ -116,6 +115,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .promo-box {
+    height: 260px;
+  }
   .promos:not(.promos-top) .promo-box {
     flex-basis: 30%;
   }
