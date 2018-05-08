@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './Card';
 import Card2 from './Card2';
+import fontawesome from '@fortawesome/fontawesome'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/fontawesome-free-regular';
+import { faStar, faVolumeDown } from '@fortawesome/fontawesome-free-solid'
 
 import yourArticles from './your-articles.json';
 import missedArticles from './missed-articles.json';
