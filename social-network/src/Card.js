@@ -3,10 +3,10 @@ import './Card.css';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-	title: PropTypes.string.isRequired, 
+	title: PropTypes.string, 
 	description: PropTypes.string, 
 	image: PropTypes.string, 
-	link: PropTypes.string.isRequired, 
+	link: PropTypes.string, 
 	author: PropTypes.object, 
 	postedDate: PropTypes.instanceOf(Date), 
 	minutesToRead: PropTypes.number, 
