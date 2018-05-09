@@ -1,0 +1,60 @@
+a {
+    text-decoration: none;
+}
+
+.YourArticle {
+    display: flex; 
+    width: 600px;
+    height: 400px;
+    border-style: solid;
+    border-width: 1px;
+    align-items: center;
+    flex-basis: 48%;
+    margin: 5px;
+}
+  
+  .YourArticle-image {
+    max-width: 300px;    
+  }
+
+  .YourArticle-body {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+
+  .YourArticle-header {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+   .YourArticle-description {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+}
+
+  .YourArticle-author {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .YourArticle-author-image {
+        width: auto;
+        height: auto;
+        max-width: 80px;
+        max-height: 80px;
+        border-radius: 100%;
+        overflow: hidden;    
+        margin: 10px;
+    }
+
+    .YourArticle-author-name {
+        align-items: center;
+        font-size: 12px;
+        margin: 3px;
+        padding-top:30px;
+    }

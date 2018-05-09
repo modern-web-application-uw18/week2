@@ -1,0 +1,61 @@
+a {
+    text-decoration: none;
+}
+
+ .MissedArticle {
+        display: flex; 
+        width: 200px;
+        height: 300px;
+        border-style: solid;
+        border-width: 1px;
+        flex-direction: row;
+        flex-basis: 32%;
+        align-items: center;
+        margin: 5px;
+    }
+    
+    .MissedArticle-image {
+        max-width: 200px;        
+      }
+
+      .MissedArticle-body {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+      }
+  
+    .MissedArticle-header {
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: left;
+    }
+    
+     .MissedArticle-description {
+      color: black;
+      font-size: 15px;
+      text-align: left;
+  }
+  
+    .MissedArticle-author {
+          display: flex;
+          flex-direction: row;
+          margin: auto;
+      }
+  
+      .MissedArticle-author-image {
+          width: auto;
+          height: auto;
+          max-width: 80px;
+          max-height: 80px;
+          border-radius: 100%;
+          overflow: hidden;    
+          margin: 10px;
+      }
+  
+      .MissedArticle-author-name {
+          align-items: center;
+          font-size: 10px;
+          margin: 2px;
+          padding-top: 30px;
+      }
