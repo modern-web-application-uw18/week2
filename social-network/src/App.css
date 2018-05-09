@@ -1,0 +1,147 @@
+/* 
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+body {
+  background: #e5ded8;
+  box-sizing: border-box;
+}
+
+h1,h2 {
+  font-size: 24px;
+}
+h3,h4 {
+  font-size: 18px !important;
+  margin: 0;
+  line-height: 22px;
+}
+
+section {
+  clear: both;
+}
+
+.authorImage {
+  float: left;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.minutes {
+  margin-left:0px;
+  margin-top: 24px;
+  float: left;
+}
+
+
+/* Article CSS */
+
+.cardStyle {
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  width: 545px;
+  margin: 12px;
+  float: left;
+}
+
+.media-left {
+  float: left;
+  min-height: 280px;
+}
+
+
+.media-body {
+  margin: 0;
+  float: right;
+  text-align: left;
+  padding: 12px;
+  width: 320px;
+}
+
+a {
+  text-decoration-style: none;
+}
+
+.cardStyle:hover, 
+.blog-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -4px;
+}
+
+
+.articleLink {
+  display: block;
+  text-decoration-style: none;
+  color: black;
+  transition: .25s ease;
+}
+
+.articleLink a:hover, 
+.blog-container a:hover {
+  color: #444;
+}
+
+/* 
+ *
+ * Card Article settings */
+
+
+
+.blog-container {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 100;
+  margin: 12px;
+  float: left;
+}
+@media screen and (min-width: 480px) {
+  .blog-container {
+    width: 18rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .blog-container {
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 959px) {
+  .blog-container {
+    width: 340px;
+  }
+}
+
+.blog-cover {
+
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+  height: 15rem;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px;
+}
+
+.blog-author,
+.blog-author--no-cover {
+  margin: 0 auto;
+  padding-top: .125rem;
+  width: 80%;
+}
+
+.blog-author h3::before,
+.blog-author--no-cover h3::before {
+ 
+  background-size: cover;
+  content: " ";
+  display: inline-block;
+  height: 32px;
+  margin-right: .5rem;
+  position: relative;
+  top: 8px;
+  width: 32px;
+}
