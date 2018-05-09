@@ -33,9 +33,7 @@ class PromoBox extends Component {
 
 
   render() {
-    const {
-      title, description, image, link, author, postedDate, minutesToRead, hasAudioAvailable, memberPreview
-    } = this.props.promoInfo;
+    const image = this.props.promoInfo.image;
     const audioIcon = this.props.promoInfo.hasAudioAvailable;
     const memberPreviewElem = this.props.promoInfo.memberPreview;
     const backgroundMediaStyles = {
