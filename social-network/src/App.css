@@ -1,0 +1,34 @@
+.App .promos {
+  display: flex;
+  flexDirection: row;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.App main {
+  max-width: 63rem;
+  margin: 1rem auto;
+}
+
+.App main > h1 {
+  letter-spacing: -.02em;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 1.1rem;
+  line-height: 24px;
+  -webkit-transform: translateY(-1.88px);
+  transform: translateY(-1.88px);
+  letter-spacing: -.05rem;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin: .7rem;
+  padding-bottom: .68rem;
+  border-bottom: .5pt solid rgba(0,0,0,.1);
+}
+
+.App main > h1 span {
+  padding-bottom: .8rem;
+  border-bottom: .5pt solid rgba(0,0,0,.84);
+}
