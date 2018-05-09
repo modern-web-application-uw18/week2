@@ -24,6 +24,11 @@
   color: rgba(0,0,0,.84);
   fill: rgba(0,0,0,.84);
   margin: .7rem;
-  padding-bottom: .8rem;
+  padding-bottom: .68rem;
   border-bottom: .5pt solid rgba(0,0,0,.1);
+}
+
+.App main > h1 span {
+  padding-bottom: .8rem;
+  border-bottom: .5pt solid rgba(0,0,0,.84);
 }

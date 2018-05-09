@@ -10,13 +10,13 @@ class App extends Component {
     return (
       <div className="App">
         <main>
-          <h1>For you</h1>
+          <h1><span>For you</span></h1>
           <section className="promos promos-top">
            {yourArticles.map((yourArticles, idx) => {
               return <PromoBox key={idx} promoInfo={yourArticles} />;
            })}
           </section>
-          <h1>In case you missed it</h1>
+          <h1><span>In case you missed it</span></h1>
           <section className="promos">
             {missedArticles.map((missedArticles, dex) => {
               return <PromoBox key={dex} promoInfo={missedArticles} />;
