@@ -42,7 +42,7 @@ Ensure that your UI meets the following criteria:
 * Uses React components that are modular and reusable.
 * Uses React components that...
     * Are modular/reusable. For example, an author's bio could be considered a modular and reusable component on this page.
-    * Are tested with at least one snapshot test per component.
+    * Are tested with at least one test per component (You can use the default test in `App.test.js` as an example.
     * Use the appropriate loops/conditionals to map and display components.
     * Use propTypes to define props.
 * Looks fairly close to the original screenshot.
