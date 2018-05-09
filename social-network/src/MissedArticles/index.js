@@ -8,7 +8,8 @@ class MissedArticle extends Component {
       image,
       description,
       link,
-      author
+      author,
+      minutesToRead
     } = this.props.missed;
 
     var divStyle = {
@@ -16,21 +17,31 @@ class MissedArticle extends Component {
     }
 
     return (
-      <div class="blog-container" onClick={link}>
-        <div class="blog-header">
-          <div class="blog-cover" style={divStyle}></div>
+      
+      
+      <div className="blog-container">
+      <a href={link} 
+      data-action="open-post" 
+      data-action-value={link} 
+      className="articleLink">
+        <div className="blog-header">
+          <div className="blog-cover" style={divStyle}></div>
         </div>
 
-        <div class="blog-body media-body">
-          <div class="blog-title">
-            <h4><a href={link}>{title}</a></h4>
+        <div className="blog-body media-body">
+          <div className="blog-title">
+            <h4>{title}</h4>
           </div>
-          <div class="blog-summary">
+          <div className="blog-summary">
             <p>{description}</p>
-            <img src={author.image}  alt={author} className="authorImage" />
-            <p>{author.name} </p>
+    
+            <img src={author.image} alt={author} className="authorImage" />
+          <p className="minutes">
+            {author.name} <br /><span> {minutesToRead} min read</span></p>
+
           </div>
         </div>
+        </a>  
       </div>
     );
   }
