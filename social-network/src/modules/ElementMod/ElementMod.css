@@ -1,0 +1,12 @@
+.element-mod__author-avatar--container {
+  margin-right: 13px;
+}
+
+.element-mod__author-avatar {
+  width: 22px;
+  border-radius: 46%;
+}
+
+.element-mod__author-data {
+  font-size: 13px;
+}
