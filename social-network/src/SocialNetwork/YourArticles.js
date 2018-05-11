@@ -8,25 +8,22 @@ class YourArticles extends Component {
 
         return(
         
-            <ul>
+            <div className = "yourSection">
             {
               objArticles.map(function(articles){
                 return (
-                <div className = "flex-container">
-                    <div><img src={articles.image} className = "image" /></div>
+                <div className = "yourFlex-container">
+                    <div><img src={articles.image} className = "yourImage" /></div>
                     <div>
-                    <div>{articles.title}</div>
-                    <br />
-                    <div>{articles.description}</div>
-                    <br />
+                    <div className = "title" >{articles.title}</div>
+                    <div className = "description">{articles.description}</div>
                     <div>{articles.author.name}</div>
                     </div>
                 </div>
-
                 )
               })
             }
-            </ul>
+            </div>
         );    
         
     }

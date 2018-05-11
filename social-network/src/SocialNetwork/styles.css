@@ -1,12 +1,75 @@
-.flex-container {
-
+.yourFlex-container {
+    display: flex;
     height: 200px;
     width: 500px;
-    background-color: #f1f1f1;
-    
   }
-
-.image {
+.missedFlex-container {
+    display: flex;
     height: 200px;
-    width: 180px;
+    width: 333px;
+    flex-flow: row wrap;
+}
+
+.yourImage {
+    height: 200px;
+    width: 210px;
+    background-position: 50% 50%;
+}
+.missedImage {
+    height: 100px;
+    width: 333px;
+}
+.title {
+    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: 550;
+    min-height: 50px;
+}
+
+.yourSection {
+    display: flex;
+    flex-flow: row wrap;
+    height:400px;
+    width: 1000px;
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 25px;
+}
+
+.missedSection {
+    display: flex;
+    flex-flow: column wrap;
+    height:300px;
+    width: 1000px;
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 25px;
+}
+
+.authorSection {
+    display: flex;
+    flex-flow: column wrap;
+    height:50px;
+    width: 300px;
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+
+    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.authorImage {
+    height: 40px;
+    width: 40px;
+
+}
+
+.description {
+    height: 50px;
+    width: 500px
 }

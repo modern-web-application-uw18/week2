@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Author from './Authors/Author.js';
 
 class MissedArticles extends Component {
 
@@ -8,13 +8,26 @@ class MissedArticles extends Component {
 
         return(
         
-            <ul>
+            <div className = "missedSection">
             {
               objArticles.map(function(articles){
-                return <li>{articles.title} - {articles.description}</li>;
+                const authorInfo = {
+                    name: articles.author.name, 
+                    image: articles.author.image, 
+                    minutesToRead: articles.minutesToRead
+                };
+                return (
+                <div className = "missedFlex-container">
+                    <div><img src={articles.image} className = "missedImage" /></div>
+                    <div className = "title" >{articles.title}</div>
+                    <div className = "description">{articles.description}</div>
+                    <br />
+                    <div><Author authorInfo = {authorInfo}/></div>
+                </div>
+                )
               })
             }
-            </ul>
+            </div>
         );    
         
     }
