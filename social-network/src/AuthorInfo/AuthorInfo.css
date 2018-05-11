@@ -1,0 +1,13 @@
+.readDuration {
+  color: rgb(165, 165, 165);
+}
+
+.bookmark>i.fas {
+  color: green;
+}
+
+.articleSummary>p {
+  overflow: auto;
+  color: rgb(128, 128, 128);
+}
+
