@@ -18,6 +18,11 @@ export default class Summary extends Component {
 }
 
 Summary.propTypes = {
-  title: PropTypes.string.isRequired,
-  summary: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  summary: PropTypes.string,
+}
+
+Summary.defaultProps = {
+  title: 'No Title',
+  summary: '',
 }

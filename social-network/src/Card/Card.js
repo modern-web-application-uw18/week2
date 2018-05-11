@@ -25,14 +25,27 @@ export default class Card extends Component {
 }
 
 Card.propTypes = {
-  link: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
   author: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-  }).isRequired,
-  postedDate: PropTypes.string.isRequired,
-  minutesToRead: PropTypes.number.isRequired,
+    name: PropTypes.string,
+    image: PropTypes.string,
+  }),
+  postedDate: PropTypes.string,
+  minutesToRead: PropTypes.number,
+};
+
+Card.defaultProps = {
+  link: '#',
+  image: '#',
+  title: 'No Title',
+  description: 'No Description',
+  author: {
+    name: 'Random User',
+    image: '#',
+  },
+  postedDate: '99/99/9999',
+  minutesToRead: 3,
 };
