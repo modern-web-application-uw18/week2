@@ -10,18 +10,18 @@ class App extends Component {
     * Loop through YourArticles data and build out cards
     * @param {object} item - The article object in the array
     */
-    const listItems = YourArticles.map((item) => {
+    const listItems = YourArticles.map((item, ind) => {
       const { link, image, description, title, author, postedDate, minutesToRead } = item;
-      return <Card link={link} image={image} description={description} title={title} author={author} postedDate={postedDate} minutesToRead={minutesToRead} />;
+      return <Card key={ind} link={link} image={image} description={description} title={title} author={author} postedDate={postedDate} minutesToRead={minutesToRead} />;
     });
 
     /**
     * Loop through MissedArticles data and build out cards
     * @param {object} item - The article object in the array
     */
-    const yourListItems = MissedArticles.map((item) => {
+    const yourListItems = MissedArticles.map((item, ind) => {
       const { link, image, description, title, author, postedDate, minutesToRead } = item;
-      return <Card link={link} image={image} description={description} title={title} author={author} postedDate={postedDate} minutesToRead={minutesToRead} />;
+      return <Card key={ind} link={link} image={image} description={description} title={title} author={author} postedDate={postedDate} minutesToRead={minutesToRead} />;
     });
     return (
       <div className="App">

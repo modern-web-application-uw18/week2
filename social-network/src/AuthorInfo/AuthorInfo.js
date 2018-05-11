@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Image from '../Image/Image';
-import './ArticleAuthor.css';
+import './AuthorInfo.css';
 
-export default class ArticleAuthor extends Component {
+export default class AuthorInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,12 +45,13 @@ export default class ArticleAuthor extends Component {
   }
 
     render() {
+      const { image, name, ...rest } = this.props.user;
         return (
           <div className="footer">
-            <Image className="profilePic" src={this.props.user.image} alt={this.props.user.name}/>
+            <Image className="profilePic" src={image} alt={name}/>
             <div className="articleInfo">
               <div className="author">
-                <a href={this.props.link}>{this.props.user.name}</a>
+                <a href={this.props.link}>{name}</a>
               </div>
               <div className="articleNotes">
                 <span className="postDate">
@@ -68,12 +69,22 @@ export default class ArticleAuthor extends Component {
     }
 }
 
-ArticleAuthor.propTypes = {
+AuthorInfo.propTypes = {
   user: PropTypes.shape({
-    image: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    image: PropTypes.string,
+    name: PropTypes.string,
     link: PropTypes.string,
   }),
-  postedDate: PropTypes.string.isRequired,
-  minutesToRead: PropTypes.number.isRequired,
+  postedDate: PropTypes.string,
+  minutesToRead: PropTypes.number,
+}
+
+AuthorInfo.defaultProps = {
+  user: {
+    image: '#',
+    name: 'Random User',
+    link: 'no link',
+  },
+  postedDate: '99/99/9999',
+  minutesToRead: 3,
 }
