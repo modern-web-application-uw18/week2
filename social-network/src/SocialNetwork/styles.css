@@ -2,46 +2,77 @@
     display: flex;
     height: 200px;
     width: 500px;
+    justify-content: left;
   }
 .missedFlex-container {
     display: flex;
     height: 200px;
-    width: 333px;
+    width: 325px;
     flex-flow: row wrap;
+    justify-content: center;
+    
 }
 
 .yourImage {
-    height: 200px;
-    width: 210px;
+    height: 258px;
+    width: 200px;
+    overflow: hidden;
     background-position: 50% 50%;
+}
+
+.yourImageSize {
+    height: 200px;
+    width: 258px;
+    
 }
 .missedImage {
     height: 100px;
-    width: 333px;
+    width: 325px;
+    overflow: hidden;
+    background-position: 50% 50%
 }
 .title {
     font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-weight: 550;
     min-height: 50px;
+    
 }
-
+.yourTitle {
+    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: 550;
+    min-height: 50px;
+    width: 270px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.yourDescription {
+    min-height: 75px;
+    width: 270px;
+    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
 .yourSection {
     display: flex;
     flex-flow: row wrap;
-    height:400px;
-    width: 1000px;
+    height:450px;
+    width: 1050px;
     margin: auto;
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
     margin-top: 25px;
+    
 }
 
 .missedSection {
     display: flex;
     flex-flow: column wrap;
     height:300px;
-    width: 1000px;
+    width: 1050px;
     margin: auto;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -52,15 +83,15 @@
 .authorSection {
     display: flex;
     flex-flow: column wrap;
-    height:50px;
-    width: 300px;
+    height:55px;
+    width: 250px;
     margin: auto;
     border: 1px solid lightgray;
     border-radius: 1px;
 
     font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .authorImage {

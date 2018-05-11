@@ -15,9 +15,8 @@ class Author extends Component {
                 <div className = "authorSection">
                     <div><img src={authorInfo.image} className = "authorImage" /></div>
                     <div>
-                        <div>{authorInfo.name}</div>
-                        <div>AuthorLink</div>
-                        <div>ReadTime</div>
+                        <div><a href = {authorInfo.link}>{authorInfo.name}</a></div>
+                        <div>{authorInfo.minutesToRead} min read</div>
                     </div>
                     
                 </div>
