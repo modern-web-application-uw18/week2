@@ -1,0 +1,75 @@
+a {
+    text-decoration: none;
+}
+ /* Missed Article specific CSS */
+ .MissedArticle {
+    box-sizing: border-box;
+    width: 33%;
+    height: 200px;
+    background-color: white;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1pt;
+    background-color: white;
+    border-style: solid;
+    border-color: gray;
+    align-items: center;
+}
+
+.MissedArticle-image-container {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    float: left;
+    align-content: center;
+    overflow: hidden;
+}
+
+.MissedArticle-image {
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+.MissedArticle-body-container {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding: 3px;
+    float: right;
+  }
+
+.MissedArticle-header {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+}
+
+ .MissedArticle-description {
+  color: black;
+  font-size: 11px;
+  text-align: left;
+}
+
+.MissedAuthor-container {
+    padding: 5px;
+    float: bottom; 
+  }
+
+  .MissedAuthor-image {
+      width: auto;
+      height: auto;
+      max-width: 50px;
+      max-height: 50px;
+      border-radius: 100%;
+      overflow: hidden;    
+      margin: 3px;
+  }
+
+  .MissedAuthor-name {
+    align-items: left;
+    font-size: 10px;
+    color: gray;
+    margin: 0px;
+  }

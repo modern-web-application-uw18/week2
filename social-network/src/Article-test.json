@@ -1,0 +1,15 @@
+{
+    "title": "test",
+    "description": "Test",
+    "image": "http://test.jpg",
+    "link": "http://test.jpg",
+    "author": {
+        "name": "Test Author",
+        "image": "http://test.jpg",
+        "isMediumMember": true
+    },
+    "postedDate": "2018-01-01T00:00:00.000Z",
+    "minutesToRead": 8,
+    "hasAudioAvailable": false,
+    "memberPreview": false
+}
