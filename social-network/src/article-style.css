@@ -1,0 +1,46 @@
+.Article {
+    box-sizing: border-box;
+    width: 45%;
+    flex-direction: row;
+    margin: 5px;
+    border:1px solid rgb(236, 230, 230);
+}
+
+.Article-img {
+    width:14em;
+    height:20em;
+    box-sizing: border-box;
+    object-fit: contain;
+    overflow: hidden; 
+    float: left;
+}
+
+.Article-title{
+    text-align:left;
+    font-size: 1em;
+}
+
+.Article-description {
+    font-size: .8em;
+    text-align: left;
+    color:grey;
+}
+
+.Author-img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 100%;
+    overflow: hidden;    
+    margin: 3px;
+}
+
+.Author-name{
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight:700;
+}
