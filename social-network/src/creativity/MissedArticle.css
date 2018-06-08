@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.MissedArticle-box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 220px;
+    width: 282px;
+    border: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    margin: 8px;
+}
+
+.MissedArticle-image-container {
+    width: 274px;
+    height: 85px;
+}
+
+.MissedArticle-image-container img {
+    width: 279px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.MissedArticle-main-column-top {
+    height: 80px;
+    width: 279px;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+
+.MissedArticle-main-column-bottom {
+    height: 55px;
+}
+
+.AuthorInfo {
+    display: flex;
+    flex-wrap: nowrap;
+    color: gray;
+    font-weight: 500;
+    height: 56px;
+    width: 279px;
+}

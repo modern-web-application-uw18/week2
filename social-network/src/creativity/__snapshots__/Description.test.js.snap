@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleInfo should render with title, description 1`] = `
+<div
+  className="Description"
+>
+  <div
+    className="Article-header"
+  >
+    Resume Magic
+  </div>
+  <div
+    className="Article-description"
+  >
+    How to craft the perfect resume
+  </div>
+</div>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorInfo should render with author name, article post date, etc. 1`] = `
+<div
+  className="Author"
+>
+  <div
+    className="Author-image-container"
+  >
+    <img
+      alt=""
+      src="https://cdn-images-1.medium.com/fit/c/80/80/1*wsP97tix16onOIkq4STxuw.jpeg"
+    />
+  </div>
+  <div
+    className="Author-text-container"
+  >
+    <div
+      className="Author-name"
+    >
+      Jerry Mathers
+    </div>
+    <div
+      className="Author-post"
+    >
+      Jun 11
+       · 
+      3
+       min read
+    </div>
+  </div>
+  <div
+    className="Article-bookmark-container"
+  >
+    <img
+      alt="Bookmark"
+      src="icon-bookmark.svg"
+    />
+  </div>
+</div>
+`;

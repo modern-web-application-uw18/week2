@@ -1,0 +1,64 @@
+.Author-image-container {
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.Author-image-member-container {
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+    margin-left: 5px;
+    background-image: url('../img/arcs.png');
+}
+
+.Author-image-container img {
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Author-image-member-container img {
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Author-text-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    color: gray;
+    height: 56px;
+    width: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.Author-name {
+    font-size: 0.75em;
+    color: black;
+    text-align: left;
+    font-weight: 600;
+    height: 20px;
+}
+
+.Author-post {
+    font-size: 0.65em;
+    text-align: left;
+    font-weight: 500;
+    height: 20px;
+}
+
+.Article-bookmark-container {
+    height: 25px;
+    width: 25px;  
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.Article-bookmark-container img {
+    height: auto;
+    width: 90%;  
+}
