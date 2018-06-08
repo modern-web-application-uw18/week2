@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MissedArticle should render with title, description, image, etc. 1`] = `
+<a
+  href="https://artplusmarketing.com/the-7-habits-of-highly-creative-people-6cfe6471af31"
+  target="_blank"
+>
+  <div
+    className="MissedArticle-box"
+  >
+    <div
+      className="MissedArticle-image-container"
+    >
+      <img
+        alt=""
+        src="https://cdn-images-1.medium.com/max/800/1*PIC-U670COEqmGwt4cvXAA.jpeg"
+      />
+    </div>
+    <div
+      className="MissedArticle-main-column-top"
+    >
+      <div
+        className="Description"
+      >
+        <div
+          className="Article-header"
+        >
+          The 7 Habits of Highly Creative People
+        </div>
+        <div
+          className="Article-description"
+        >
+          "What a good artist understands is that nothing comes from nowhere. Nothing is completely original."
+        </div>
+      </div>
+    </div>
+    <div
+      className="MissedArticle-main-column-bottom"
+    >
+      <div
+        className="Author"
+      >
+        <div
+          className="Author-image-member-container"
+        >
+          <img
+            alt=""
+            src="https://cdn-images-1.medium.com/fit/c/80/80/1*NGHEMBPNbIQmmAkvCjaspA.jpeg"
+          />
+        </div>
+        <div
+          className="Author-text-container"
+        >
+          <div
+            className="Author-name"
+          >
+            Louis Chew
+          </div>
+          <div
+            className="Author-post"
+          >
+            Apr 04
+             · 
+            8
+             min read
+          </div>
+        </div>
+        <div
+          className="Article-bookmark-container"
+        >
+          <img
+            alt="Bookmark"
+            src="icon-bookmark.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;

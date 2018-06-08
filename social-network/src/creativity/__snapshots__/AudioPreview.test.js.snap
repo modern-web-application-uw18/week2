@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleAudio should render with hasAudioAvailable, memberPreview 1`] = `
+<div
+  className="AudioPreview"
+>
+  <div
+    className="Article-audio-image"
+  >
+    <img
+      alt="Play Audio"
+      src="icon-speaker.png"
+    />
+  </div>
+  <div
+    className="Article-audio-text"
+  >
+    Audio Available
+  </div>
+</div>
+`;

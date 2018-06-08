@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: gray;
+}
+
+.Article-container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 220px;
+    width: 430px;
+    border: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    margin: 8px;
+}
+
+.Article-image-container {
+    width: 180px;
+    height: 217px;
+}
+
+.Article-image-container img {
+    width: 180px;
+    height: 217px;
+    overflow: hidden;
+}
+
+.Article-main-column {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 216px;
+}
+
+.Article-main-column-top {
+    height: 168px;
+    width: 240px;
+    padding: 10px;
+}
+
+.Author {
+    display: flex;
+    flex-wrap: nowrap;
+    color: gray;
+    font-weight: 500;
+    height: 60px;
+    width: 284px;
+}

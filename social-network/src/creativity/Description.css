@@ -1,0 +1,20 @@
+.Description {
+    text-align: left;
+}
+
+.Article-header {
+    max-width: 220px;
+    font-weight: 700;
+    font-size: 1em;
+    color: black;
+    vertical-align: "top";
+}
+      
+.Article-description {
+    vertical-align: "middle";
+    color: gray;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
