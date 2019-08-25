@@ -4,7 +4,7 @@ import './flexstyle.css';
 import PropTypes from 'prop-types';
 
 
-
+ 
 class Article extends Component {
     render(){
         const{ //shove all data from json pull here.
